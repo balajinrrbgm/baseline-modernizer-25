@@ -1,0 +1,92 @@
+{
+  "name": "baseline-modernizer",
+  "displayName": "Baseline Modernizer - Enhanced Dashboard",
+  "description": "Modernize your web code with Baseline compatibility data. Interactive dashboard with comprehensive analytics.",
+  "version": "1.1.0",
+  "publisher": "baseline-tools",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Linters",
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "baseline",
+    "web-features",
+    "modernization",
+    "compatibility",
+    "dashboard"
+  ],
+  "icon": "assets/icon.png",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:html",
+    "onLanguage:css"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "baseline-modernizer.analyzeFile",
+        "title": "🔍 Analyze File",
+        "category": "Baseline"
+      },
+      {
+        "command": "baseline-modernizer.analyzeProject",
+        "title": "📂 Analyze Project",
+        "category": "Baseline"
+      },
+      {
+        "command": "baseline-modernizer.showDashboard",
+        "title": "📊 Show Dashboard",
+        "category": "Baseline"
+      },
+      {
+        "command": "baseline-modernizer.generateDocumentation",
+        "title": "📖 Generate Documentation",
+        "category": "Baseline"
+      },
+      {
+        "command": "baseline-modernizer.showMetrics",
+        "title": "📈 Show Metrics",
+        "category": "Baseline"
+      }
+    ],
+    "configuration": {
+      "title": "Baseline Modernizer",
+      "properties": {
+        "baseline-modernizer.enableAutoAnalysis": {
+          "type": "boolean",
+          "default": true
+        },
+        "baseline-modernizer.showBaselineStatus": {
+          "type": "boolean",
+          "default": true
+        },
+        "baseline-modernizer.targetBaseline": {
+          "type": "string",
+          "enum": [
+            "high",
+            "low",
+            "false"
+          ],
+          "default": "low"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "web-features": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  }
+}

@@ -1,0 +1,226 @@
+out/
+node_modules/
+*.vsix
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies and build files
+**/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# React build output
+**/build/
+build/
+dist/
+
+# Python cache and bytecode
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+**/venv/
+**/.venv/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# AWS credentials and config
+.aws/
+aws-exports.js
+.amplify/
+amplify/
+
+# CDK output
+cdk.out/
+**/cdk.out/
+cdk.context.json
+
+# CloudFormation templates
+*.cf.json
+*.cf.yaml
+
+# Deployment packages
+*.zip
+*.tar.gz
+deployment-package/
+aws-deployment-package/
+
+# IDE and editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Lambda deployment packages
+lambda-package.zip
+healthcare-ai-lambda.zip
+frontend-deployment.zip
+
+# S3 sync files
+.s3-sync-*
+
+# Terraform (if used)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+
+# Certificate files (should not be in repo)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Test output
+test-results/
+test-output/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Local configuration files
+config/local.json
+config/development.json
+local.config.js
+
+# Package-lock conflicts
+package-lock.json.orig
+
+# MacOS
+*.dmg
+
+# Windows
+*.exe
+*.msi
+
+# Misc
+.nyc_output/
+.next/

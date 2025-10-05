@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseline Modernizer Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Baseline Modernizer Dashboard</h1>
+            <div class="actions">
+                <button id="refreshBtn" class="btn btn-primary">🔄 Refresh</button>
+                <button id="timelineBtn" class="btn btn-secondary">📅 Timeline</button>
+                <button id="analyzeBtn" class="btn btn-info">🔍 Analyze</button>
+                <button id="exportBtn" class="btn btn-secondary">📊 Export</button>
+                <button id="resetBtn" class="btn btn-danger">🗑️ Reset</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- Metrics Overview -->
+            <div class="metrics-grid">
+                <div class="metric-card files-card">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-content">
+                        <h3>Files Analyzed</h3>
+                        <div class="metric-value" id="filesAnalyzed">0</div>
+                        <div class="metric-change" id="filesChange">Start analysis to see data</div>
+                    </div>
+                </div>
+
+                <div class="metric-card issues-card">
+                    <div class="metric-icon">🔍</div>
+                    <div class="metric-content">
+                        <h3>Issues Found</h3>
+                        <div class="metric-value" id="issuesFound">0</div>
+                        <div class="metric-change" id="issuesChange">Legacy patterns to modernize</div>
+                    </div>
+                </div>
+
+                <div class="metric-card fixes-card">
+                    <div class="metric-icon">✅</div>
+                    <div class="metric-content">
+                        <h3>Fixes Applied</h3>
+                        <div class="metric-value" id="fixesApplied">0</div>
+                        <div class="metric-change" id="fixesChange">Modernizations completed</div>
+                    </div>
+                </div>
+
+                <div class="metric-card progress-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-content">
+                        <h3>Progress</h3>
+                        <div class="metric-value" id="progress">0%</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features and Browser Support -->
+            <div class="charts-section">
+                <div class="chart-container">
+                    <h2>🔧 Most Used Legacy Features</h2>
+                    <div id="featuresChart" class="chart interactive-chart">
+                        <div class="chart-placeholder">Click "Refresh" to load feature data...</div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <h2>🌐 Browser Compatibility Overview</h2>
+                    <div id="browserChart" class="chart interactive-chart">
+                        <div class="chart-placeholder">Loading browser support data...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supported Web Features -->
+            <div class="supported-features-section">
+                <h2>✨ Baseline Web Features Available</h2>
+                <div class="feature-tabs">
+                    <button class="tab-button active" data-category="all">All Features</button>
+                    <button class="tab-button" data-category="JavaScript">JavaScript</button>
+                    <button class="tab-button" data-category="CSS">CSS</button>
+                    <button class="tab-button" data-category="HTML">HTML</button>
+                </div>
+                <div id="supportedFeaturesContainer" class="supported-features">
+                    <div class="features-placeholder">Loading supported web features...</div>
+                </div>
+            </div>
+
+            <!-- Modernization Timeline -->
+            <div class="timeline-section">
+                <h2>📅 Modernization Timeline</h2>
+                <div id="timelineContainer" class="timeline">
+                    <div class="timeline-placeholder">Generate timeline based on your analysis...</div>
+                </div>
+            </div>
+
+            <!-- Smart Recommendations -->
+            <div class="recommendations-section">
+                <h2>💡 Smart Recommendations</h2>
+                <div id="recommendationsContainer" class="recommendations">
+                    <div class="recommendations-placeholder">Personalized recommendations will appear here...</div>
+                </div>
+            </div>
+
+            <!-- Baseline Statistics -->
+            <div class="baseline-stats-section">
+                <h2>📊 Baseline Feature Statistics</h2>
+                <div id="baselineStatsContainer" class="baseline-stats">
+                    <div class="stats-placeholder">Loading comprehensive Baseline data...</div>
+                </div>
+            </div>
+
+            <!-- Information Section -->
+            <div class="info-section">
+                <h2>ℹ️ Understanding Baseline Status</h2>
+                <p class="baseline-description">
+                    Baseline identifies which web platform features are ready to use in your projects. 
+                    Features are considered "Baseline" when they work consistently across major browsers.
+                </p>
+                <div class="baseline-legend">
+                    <div class="legend-item">
+                        <span class="status-indicator high"></span>
+                        <span><strong>Widely Available (Baseline High)</strong> - Supported for 30+ months across Chrome, Edge, Firefox, and Safari</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-indicator low"></span>
+                        <span><strong>Newly Available (Baseline Low)</strong> - Supported across all major browsers but for less than 30 months</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-indicator limited"></span>
+                        <span><strong>Limited Availability</strong> - Not yet supported across all major browsers</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
