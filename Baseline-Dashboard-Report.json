@@ -1,0 +1,346 @@
+{
+  "timestamp": "2025-10-05T05:27:32.911Z",
+  "metrics": {
+    "filesAnalyzed": 9,
+    "issuesFound": 25,
+    "fixesApplied": 7,
+    "featureUsage": {
+      "var": 6,
+      "XMLHttpRequest": 9,
+      "float": 5,
+      "function": 3,
+      "<div>": 10,
+      "<b><i><u>": 9,
+      "for-in": 2
+    },
+    "modernizationProgress": 28,
+    "lastAnalysis": "2025-10-05T05:25:38.074Z",
+    "sessionStartTime": "2025-10-05T05:24:47.335Z",
+    "analysisHistory": [
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "fileName": "app.js",
+        "issuesCount": 2,
+        "language": "javascript"
+      },
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "fileName": "Header.js",
+        "issuesCount": 4,
+        "language": "javascript"
+      },
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "fileName": "main.css",
+        "issuesCount": 4,
+        "language": "css"
+      },
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "fileName": "api.js",
+        "issuesCount": 4,
+        "language": "javascript"
+      },
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "fileName": "index.html",
+        "issuesCount": 1,
+        "language": "html"
+      },
+      {
+        "timestamp": "2025-10-05T05:25:37.540Z",
+        "fileName": "app.js",
+        "issuesCount": 3,
+        "language": "unknown"
+      },
+      {
+        "timestamp": "2025-10-05T05:25:37.540Z",
+        "fileName": "styles.css",
+        "issuesCount": 2,
+        "language": "unknown"
+      },
+      {
+        "timestamp": "2025-10-05T05:25:38.074Z",
+        "fileName": "app.js",
+        "issuesCount": 3,
+        "language": "unknown"
+      },
+      {
+        "timestamp": "2025-10-05T05:25:38.074Z",
+        "fileName": "styles.css",
+        "issuesCount": 2,
+        "language": "unknown"
+      }
+    ],
+    "fixHistory": [
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "featureId": "let-const",
+        "fileName": "app.js"
+      },
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "featureId": "fetch",
+        "fileName": "api.js"
+      },
+      {
+        "timestamp": "2025-10-05T05:24:47.336Z",
+        "featureId": "flexbox",
+        "fileName": "main.css"
+      },
+      {
+        "timestamp": "2025-10-05T05:25:37.540Z",
+        "featureId": "let-const",
+        "fileName": ""
+      },
+      {
+        "timestamp": "2025-10-05T05:25:37.540Z",
+        "featureId": "fetch",
+        "fileName": ""
+      },
+      {
+        "timestamp": "2025-10-05T05:25:38.074Z",
+        "featureId": "let-const",
+        "fileName": ""
+      },
+      {
+        "timestamp": "2025-10-05T05:25:38.074Z",
+        "featureId": "fetch",
+        "fileName": ""
+      }
+    ],
+    "sessionStats": {
+      "duration": 3,
+      "filesAnalyzedThisSession": 9,
+      "issuesFoundThisSession": 25,
+      "fixesAppliedThisSession": 7,
+      "averageIssuesPerFile": 2.8
+    },
+    "exportTimestamp": "2025-10-05T05:27:32.911Z",
+    "version": "1.0.0"
+  },
+  "baselineStatistics": {
+    "total": 1200,
+    "widely_available": 850,
+    "newly_available": 250,
+    "limited_availability": 100,
+    "adoption_percentage": 71
+  },
+  "recommendations": [
+    {
+      "id": "low_fix_rate",
+      "type": "priority",
+      "title": "Apply Available Quick Fixes",
+      "description": "You have 25 issues but only 28% fixed. Use VS Code's quick fix actions (Ctrl+.) to modernize your code faster.",
+      "action": "Apply Quick Fixes",
+      "actionable": true,
+      "impact": "High"
+    },
+    {
+      "id": "high_density",
+      "type": "warning",
+      "title": "Focus on High-Impact Files",
+      "description": "Average 3 legacy patterns per file. Prioritize files with the most issues for maximum impact.",
+      "action": "View File Analysis",
+      "actionable": true,
+      "impact": "Medium"
+    },
+    {
+      "id": "common_pattern",
+      "type": "info",
+      "title": "Modernize \"<div>\" Usage",
+      "description": "\"<div>\" appears 10 times. This is your biggest modernization opportunity.",
+      "action": "View Alternatives",
+      "actionable": true,
+      "impact": "High"
+    },
+    {
+      "id": "baseline_adoption",
+      "type": "suggestion",
+      "title": "Adopt More Baseline Features",
+      "description": "850+ web features are widely available (Baseline High). Consider using modern APIs and CSS properties that are safe across all browsers.",
+      "action": "Explore Baseline Features",
+      "actionable": true,
+      "impact": "Medium"
+    },
+    {
+      "id": "browser_compatibility",
+      "type": "info",
+      "title": "Excellent Browser Support Available",
+      "description": "Chrome (82%), Firefox (77%), Safari (71%), Edge (78%) - Most modern features have strong cross-browser support.",
+      "action": "View Browser Matrix",
+      "actionable": false,
+      "impact": "Low"
+    }
+  ],
+  "browserCompatibility": {
+    "chrome": {
+      "supported": 980,
+      "total": 1200,
+      "percentage": 82
+    },
+    "firefox": {
+      "supported": 920,
+      "total": 1200,
+      "percentage": 77
+    },
+    "safari": {
+      "supported": 850,
+      "total": 1200,
+      "percentage": 71
+    },
+    "edge": {
+      "supported": 940,
+      "total": 1200,
+      "percentage": 78
+    }
+  },
+  "supportedWebFeatures": [
+    {
+      "id": "flexbox",
+      "name": "CSS Flexbox",
+      "description": "A layout method for arranging items in rows or columns",
+      "baseline": "high",
+      "since": "2017-03",
+      "browsers": {
+        "chrome": "29",
+        "firefox": "28",
+        "safari": "9",
+        "edge": "12"
+      },
+      "category": "CSS"
+    },
+    {
+      "id": "fetch",
+      "name": "Fetch API",
+      "description": "Modern way to make HTTP requests",
+      "baseline": "high",
+      "since": "2017-04",
+      "browsers": {
+        "chrome": "42",
+        "firefox": "39",
+        "safari": "10.1",
+        "edge": "14"
+      },
+      "category": "JavaScript"
+    },
+    {
+      "id": "let-const",
+      "name": "let and const",
+      "description": "Block-scoped variable declarations",
+      "baseline": "high",
+      "since": "2016-07",
+      "browsers": {
+        "chrome": "49",
+        "firefox": "36",
+        "safari": "10",
+        "edge": "12"
+      },
+      "category": "JavaScript"
+    },
+    {
+      "id": "arrow-functions",
+      "name": "Arrow Functions",
+      "description": "Concise function syntax with lexical this binding",
+      "baseline": "high",
+      "since": "2016-07",
+      "browsers": {
+        "chrome": "45",
+        "firefox": "22",
+        "safari": "10",
+        "edge": "12"
+      },
+      "category": "JavaScript"
+    },
+    {
+      "id": "grid",
+      "name": "CSS Grid",
+      "description": "Two-dimensional layout system",
+      "baseline": "high",
+      "since": "2020-01",
+      "browsers": {
+        "chrome": "57",
+        "firefox": "52",
+        "safari": "10.1",
+        "edge": "16"
+      },
+      "category": "CSS"
+    },
+    {
+      "id": "semantic-elements",
+      "name": "HTML5 Semantic Elements",
+      "description": "Meaningful HTML structure elements",
+      "baseline": "high",
+      "since": "2014-01",
+      "browsers": {
+        "chrome": "5",
+        "firefox": "4",
+        "safari": "4.1",
+        "edge": "12"
+      },
+      "category": "HTML"
+    },
+    {
+      "id": "custom-properties",
+      "name": "CSS Custom Properties",
+      "description": "CSS variables for dynamic styling",
+      "baseline": "high",
+      "since": "2018-04",
+      "browsers": {
+        "chrome": "49",
+        "firefox": "31",
+        "safari": "9.1",
+        "edge": "16"
+      },
+      "category": "CSS"
+    },
+    {
+      "id": "template-literals",
+      "name": "Template Literals",
+      "description": "Enhanced string literals with embedded expressions",
+      "baseline": "high",
+      "since": "2016-07",
+      "browsers": {
+        "chrome": "41",
+        "firefox": "34",
+        "safari": "9",
+        "edge": "12"
+      },
+      "category": "JavaScript"
+    },
+    {
+      "id": "object-spread",
+      "name": "Object Spread Syntax",
+      "description": "Spread properties in object literals",
+      "baseline": "low",
+      "since": "2024-03",
+      "browsers": {
+        "chrome": "60",
+        "firefox": "55",
+        "safari": "11.1",
+        "edge": "79"
+      },
+      "category": "JavaScript"
+    },
+    {
+      "id": "container-queries",
+      "name": "CSS Container Queries",
+      "description": "Style elements based on container size",
+      "baseline": "low",
+      "since": "2024-02",
+      "browsers": {
+        "chrome": "105",
+        "firefox": "110",
+        "safari": "16",
+        "edge": "105"
+      },
+      "category": "CSS"
+    }
+  ],
+  "summary": {
+    "totalAnalyzed": 9,
+    "issuesFound": 25,
+    "modernizationProgress": "28%",
+    "topRecommendation": "Apply Available Quick Fixes"
+  }
+}

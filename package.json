@@ -1,9 +1,9 @@
 {
   "name": "baseline-modernizer",
-  "displayName": "Baseline Modernizer - Enhanced Dashboard",
+  "displayName": "Baseline Modernizer",
   "description": "Modernize your web code with Baseline compatibility data. Interactive dashboard with comprehensive analytics.",
   "version": "1.1.0",
-  "publisher": "baseline-tools",
+  "publisher": "balajinrrbgm",
   "engines": {
     "vscode": "^1.74.0"
   },

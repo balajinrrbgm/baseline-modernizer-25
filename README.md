@@ -2,6 +2,15 @@
 
 > Professional VS Code extension with interactive dashboard for web modernization using Baseline data
 
+## 📦 Installation
+
+You can install this extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/) by searching for `balajinrrbgm.baseline-modernizer-25`.
+
+## 📝 Repository
+
+- GitHub Repository: [baseline-modernizer-25](https://github.com/balajinrrbgm/baseline-modernizer-25)
+- Publisher: [balajinrrbgm](https://marketplace.visualstudio.com/publishers/balajinrrbgm)
+
 ## ✨ Enhanced Features
 
 ### 📊 Interactive Dashboard
